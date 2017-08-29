@@ -1,3 +1,5 @@
+import java.util.List;
+
 class Oppgave {
 
     static final String PRIORITET_HOY = "HOY";
@@ -5,6 +7,7 @@ class Oppgave {
     private String oppgaveId;
     private String ansvarligNavn;
     private String prioritet;
+    private List<String> underOppgaver;
 
     String getOppgaveId() {
         return oppgaveId;
@@ -30,4 +33,11 @@ class Oppgave {
         this.prioritet = prioritet;
     }
 
+    List<String> getUnderOppgaver() {
+        return underOppgaver;
+    }
+
+    void setUnderOppgaver(List<String> underOppgaver) {
+        this.underOppgaver = underOppgaver;
+    }
 }
